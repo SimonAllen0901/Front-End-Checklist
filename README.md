@@ -18,8 +18,18 @@ HTML page to production.
 - [HTML](#html)
 - [Webfonts](#webfonts)
 - [CSS](#css)
+- [Images](#images)
 - [JavaScript](#javascript)
+- [Security](#security)
+- [Performance](#performance)
 - [Accessibility](#accessibility)
+- [SEO](#seo)
+- [Translations](#translations)
+- [Support](#support)
+- [Contributors](#contributors)
+- [Backers](#backers)
+- [Sponsors](#sponsors)
+- [License](#license)
 
 ## How to use?
 
@@ -406,7 +416,7 @@ considered if you target a particular presence on those and want to ensure the d
 
 - 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
 
-### Performance
+### CSS Performance
 
 - [ ] **Concatenation:** ![High][high_img] CSS files are concatenated in a single file _(Not for HTTP/2)_.
 - [ ] **Minification:** ![High][high_img] All CSS files are minified.
