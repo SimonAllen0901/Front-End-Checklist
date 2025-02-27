@@ -12,7 +12,7 @@
 
 ## 📚目錄
 
-- [How to use](#how-to-use)
+- [使用方式](#使用方式)
 - [Head](#head)
 - [HTML](#html)
 - [Webfonts](#webfonts)
@@ -53,12 +53,12 @@
 
 <!-- prettier-ignore-start -->
 > [!NOTE]
-> You can find [a list of everything](https://github.com/joshbuchea/HEAD) that could be found in the `<head>` of an HTML document.
+> **補充：** 這有[一份列表](https://github.com/joshbuchea/HEAD)可以找到所有 HTML `<head>`裡面可能含有的東西。
 <!-- prettier-ignore-end -->
 
-### Meta tag
+### Meta 標籤
 
-- [ ] **Doctype:** ![High][high_img] The Doctype is HTML5 and is at the top of all your HTML pages.
+- [ ] **Doctype （檔案類型）** ![High][high_img] Doctype 是 HTML5，同時要放在 HTML 頁面的最上面。
 
 <!-- prettier-ignore-start -->
 ```html
