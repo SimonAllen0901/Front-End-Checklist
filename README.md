@@ -1,17 +1,16 @@
-# 🗂 Front-End Checklist
+# 前端待辦清單
 
-The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your website /
-HTML page to production.
+**前端待辦清單** 是一份詳細的清單，用來檢查你的網站或網頁發布到正式環境前所有需要測試的項目。
 
-**Other Checklists:**
+**其他待辦清單：**
 
 - [🎮 Front-End Performance Checklist](https://github.com/thedaviddias/Front-End-Performance-Checklist#---------front-end-performance-checklist-)
 - [💎 Front-End Design Checklist](https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist)
 
 > [!TIP]
-> ⭐️ Dev-friendly UX patterns you wish you knew. 👉 [UX Patterns for Devs](https://uxpatterns.dev/en) ⭐️
+> ⭐️ 那些開發者絕對不能錯過的 UX 設計技巧 👉 [UX Patterns for Devs](https://uxpatterns.dev/en) ⭐️
 
-## 📚 Table of Contents
+## 📚目錄
 
 - [How to use](#how-to-use)
 - [Head](#head)
@@ -31,28 +30,24 @@ HTML page to production.
 - [Sponsors](#sponsors)
 - [License](#license)
 
-## How to use?
-
+## 使用方式
 <!-- prettier-ignore-start -->
 > [!IMPORTANT]
-> **Disclaimer:** This checklist is based on Front-End developers' years of experience, with additions from other open-source checklists.
+> **提醒一下：** 這份檢查清單是根據前端開發者多年的經驗整理出來的，還參考了許多開源清單的內容！
 <!-- prettier-ignore-end -->
 
-All items in the **Front-End Checklist** are required for the majority of the projects, but some elements can be omitted
-or are not essential (in the case of an administration web app, you may not need RSS feed for example). We choose to use
-3 levels of flexibility:
 
-- ![Low][low_img] indicates that the item is recommended but can be omitted in certain situations.
-- ![Medium][medium_img] indicates that the item is highly recommended but can potentially be omitted in very specific
-  cases. However, omitting these elements can negatively impact performance or SEO.
-- ![High][high_img] indicates that the item cannot be omitted under any circumstances. Removing these elements may
-  result in page malfunctions or cause accessibility and SEO issues. Testing should prioritize these elements first.
+**前端待辦清單**中的所有項目皆來是大多數專案的需求，針對你的專案時，還是會有某些項目用不到、可以忽略（例如，在行政用途的網頁 APP 中，你可能不需要 RSS 的訂閱功能）。我們依照可以調動的靈活性區分為三個等級：
 
-Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
+* ![Low][low_img] 代表這是個**推薦**項目，但在特定的情況下可以忽略。
+* ![Medium][medium_img] 代表這是**高度推薦**項目，在非常少數的特定情況下可以忽略。其中某些項目，如果忽略了會使效能或 SEO 結果（指搜尋引擎上的排名）很糟。
+* ![High][high_img] 代表這是任何情況下都**不能忽略**的項目。忽略可能在你的網頁、網頁親和力或 SEO 上造成功能失常。這些項目的測試優先度最高。
 
-- 📖: documentation or article
-- 🛠: online tool / testing tool
-- 📹: media or video content
+某些資源有標示符號，協助你瞭解在清單中找到的內容或協助的類型：
+
+* 📖: 文檔或文章
+* 🛠: 網路工具 / 測試工具
+* 📹: 媒體或影片內容
 
 ## Head
 
