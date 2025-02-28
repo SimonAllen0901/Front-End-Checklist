@@ -468,38 +468,32 @@ considered if you target a particular presence on those and want to ensure the d
 
 ## Images
 
-> **Notes:** For a complete understanding of image optimization, check the free ebook
-> **[Essential Image Optimization](https://images.guide/)** from Addy Osmani.
+> **補充：** 觀看 Addy Osmani 的免費電子書 **[Essential Image Optimization](https://images.guide/)** 以理解圖片的最佳化。
 
 ### 最佳實踐
 
-- [ ] **Optimization:** ![High][high_img] All images are optimized to be rendered in the browser. WebP format could be
-      used for critical pages (like Homepage).
+- [ ] **Optimization:** ![High][high_img] 所有圖片均已最佳化，以確保在瀏覽器中順暢渲染。 關鍵頁面（如首頁）可考慮使用 WebP 格式以提升效能。
 
 - 🛠 [Imagemin](https://github.com/imagemin/imagemin)
-- 🛠 Use [ImageOptim](https://imageoptim.com/) to optimise your images for free.
-- 🛠 Use [KeyCDN Image Processing](https://www.keycdn.com/support/image-processing) for image optimization in real time.
-- 🛠 [TinyPNG](https://tinypng.com/) optimises png, apng (animated png) and jpg images with very small loss in quality.
-  Free and paid version available.
-- 🛠 [ZorroSVG](http://quasimondo.com/ZorroSVG/) jpg-like compression for transparent images using svg masking.
-- 🛠 [SVGO](https://github.com/svg/svgo) a Nodejs-based tool for optimizing SVG vector graphics files.
-- 🛠 [SVGOMG](https://jakearchibald.github.io/svgomg/) a web-based GUI version of SVGO for optimising your svgs online.
+- 🛠 利用 [ImageOptim](https://imageoptim.com/) 免費最佳化您的圖片。
+- 🛠 利用 [KeyCDN Image Processing](https://www.keycdn.com/support/image-processing) 用於即時圖片影像最佳化。
+- 🛠 [TinyPNG](https://tinypng.com/) 最佳化 png、apng（動畫 png）和 jpg 圖像，品質損失很小。 提供免費和付費版本​​。
+- 🛠 [ZorroSVG](http://quasimondo.com/ZorroSVG/) 使用 SVG 遮罩（masking）對透明圖片進行類似 JPG 的壓縮。
+- 🛠 [SVGO](https://github.com/svg/svgo) 基於 Node.js 的工具，用於最佳化 SVG 向量圖片。
+- 🛠 [SVGOMG](https://jakearchibald.github.io/svgomg/) 是 SVGO 的網頁版 GUI，可在線上最佳化您的 SVG 圖檔。
 
-- [ ] **Picture/Srcset:** ![Medium][medium_img] You use picture/srcset to provide the most appropriate image for the
-      current viewport of the user.
+- [ ] **Picture/Srcset:** ![Medium][medium_img] 使用 `<picture>` 或 `srcset` 來提供最適合使用者當前 Viewport 的圖片。
 
 - 📖 [How to Build Responsive Images with srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/)
 
-- [ ] **Retina:** ![Low][low_img] You provide layout images 2x or 3x, support retina display.
-- [ ] **Sprite:** ![Medium][medium_img] Small images are in a sprite file (in the case of icons, they can be in an SVG
-      sprite image).
-- [ ] **Width and Height:** ![High][high_img] Set `width` and `height` attributes on `<img>` if the final rendered image
-      size is known (can be omitted for CSS sizing).
-- [ ] **Alternative text:** ![High][high_img] All `<img>` have an alternative text which describes the image visually.
+- [ ] **Retina:** ![Low][low_img] 你有提供 2x 或 3x 解析度的版面圖片，以支援 Retina 顯示器。
+- [ ] **Sprite:** ![Medium][medium_img] 小型圖片應使用 Sprite 檔案（圖示可使用 SVG Sprite）。
+- [ ] **Width and Height:** ![High][high_img] 若已知最終渲染的圖片大小，應在 `<img>` 標籤上設定 `width` 和 `height` 屬性（若使用 CSS 控制大小則可省略）。
+- [ ] **Alternative text:** ![High][high_img] 所有 `<img>` 標籤都應包含描述圖片內容的替代文字（Alt Text）。
 
 - 📖 [Alt-texts: The Ultimate Guide](https://axesslab.com/alt-texts/)
 
-- [ ] **Lazy loading:** ![Medium][medium_img] Images are lazyloaded (A noscript fallback is always provided).
+- [ ] **Lazy loading:** ![Medium][medium_img] 圖片應使用 Lazy Load 技術（並提供 noscript 無程式碼的備案）。
   - 🛠 [Native lazy loading polyfill](https://github.com/mfranzke/loading-attribute-polyfill/)
 
 **[⬆ back to top](#-table-of-contents)**
@@ -510,9 +504,9 @@ considered if you target a particular presence on those and want to ensure the d
 
 ### 最佳實踐
 
-- [ ] **JavaScript Inline:** ![High][high_img] You don't have any JavaScript code inline (mixed with your HTML code).
-- [ ] **Concatenation:** ![High][high_img] JavaScript files are concatenated.
-- [ ] **Minification:** ![High][high_img] JavaScript files are minified (you can add the `.min` suffix).
+- [ ] **JavaScript Inline:** ![High][high_img] 避免在 HTML 內嵌 JavaScript 程式碼（應將 JS 置於獨立檔案中）。
+- [ ] **Concatenation:** ![High][high_img] JavaScript 檔案應進行合併（Concatenation）。
+- [ ] **Minification:** ![High][high_img] JavaScript 檔案應進行壓縮（Minification），並加上 .min 後綴標示。
 
 - 📖 [Minify Resources (HTML, CSS, and JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources)
 
@@ -521,35 +515,29 @@ considered if you target a particular presence on those and want to ensure the d
 - 📖
   [Guidelines for Developing Secure Applications Utilizing JavaScript](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)
 
-- [ ] **`noscript` tag:** ![Medium][medium_img] Use `<noscript>` tag in the HTML body if a script type on the page is
-      unsupported or if scripting is currently turned off in the browser. This will be helpful in client-side rendering
-      heavy apps such as React.js, see
-      [examples](https://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-noscript-element--cms-25498).
+- [ ] **`noscript` tag:** ![Medium][medium_img] 在 HTML `<body>` 中使用 `<noscript>` 標籤，以應對瀏覽器不支援某些程式腳本類型或 JavaScript 被停用的情況。
+這對於像 React.js 這類前端渲染密集的應用特別有幫助。可參考[範例](https://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-noscript-element--cms-25498).
 
 ```html
 <noscript> You need to enable JavaScript to run this app. </noscript>
 ```
 
-- [ ] **Non-blocking:** ![Medium][medium_img] JavaScript files are loaded asynchronously using `async` or deferred using
-      `defer` attribute.
+- [ ] **Non-blocking:** ![Medium][medium_img] 使用 `async` 或 `defer` 屬性來非同步載入 JavaScript，減少渲染阻塞。
 
 - 📖 [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
 
-- [ ] **Optimized and updated JS libraries:** ![Medium][medium_img] All JavaScript libraries used in your project are
-      necessary (prefer Vanilla Javascript for simple functionalities), updated to their latest version and don't
-      overwhelm your JavaScript with unnecessary methods.
+- [ ] **Optimized and updated JS libraries:** ![Medium][medium_img] 確保你專案中所有 JavaScript 函式庫皆為必要的，並將其更新至最新版本。對於簡單功能，建議使用 Vanilla JavaScript 以減少依賴。
 
 - 📖 [You may not need jQuery](http://youmightnotneedjquery.com/)
 - 📖 [Vanilla JavaScript for building powerful web applications](https://plainjs.com/)
 
-- [ ] **Modernizr:** ![Low][low_img] If you need to target some specific features you can use a custom Modernizr to add
-      classes in your `<html>` tag.
+- [ ] **Modernizr:** ![Low][low_img] 如果你需要指定特定的瀏覽器功能，可使用自訂的 Modernizr 為 <html> 標籤添加適當的類別。
 
 - 🛠 [Customize your Modernizr](https://modernizr.com/download?setclasses)
 
 ### JavaScript testing
 
-- [ ] **ESLint:** ![High][high_img] No errors are flagged by ESLint (based on your configuration or standards rules).
+- [ ] **ESLint:** ![High][high_img] 確保 ESLint 不報錯，並符合專案的設定或標準規則。
 
 - 📖 [ESLint - The pluggable linting utility for JavaScript and JSX](https://eslint.org/)
 
@@ -660,7 +648,7 @@ considered if you target a particular presence on those and want to ensure the d
 <link rel="preconnect" href="https://example.com" />
 ```
 
-- [ ] **Prefetching:** ![Low][low_img] 使用 `prefetch` 在閒置時間提前請求即將使用到的資源（例如 lazy loaded images）。.
+- [ ] **Prefetching:** ![Low][low_img] 使用 `prefetch` 在閒置時間提前請求即將使用到的資源（例如 lazy loaded images）。
 
 ```html
 <link rel="prefetch" href="image.png" />
