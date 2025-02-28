@@ -210,6 +210,8 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
 
+> 註: dir 中的 rtl 是 right to left 縮寫，而 ltr 則是 left to right 的縮寫
+
 - [ ] **Alternate language（備用語言）:** ![Low][low_img] 語言標籤在網頁中被指定且與當前頁面的語言是相關的。
 
 <!-- prettier-ignore-start -->
@@ -289,7 +291,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
   [Getting started with cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
 - 🛠 利用 [Twitter card validator](https://cards-dev.twitter.com/validator) 測試你的網頁
 
-**[⬆ back to top](#-table-of-contents)**
+**[⬆ 返回目錄](#目錄)**
 
 ## HTML
 
@@ -327,7 +329,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 - 📖
   [Use AdBlocking in your Dev Environment](https://andreicioara.com/use-adblocking-in-your-dev-environment-48db500d9b86)
 
-**[⬆ back to top](#-table-of-contents)**
+**[⬆ 返回目錄](#目錄)**
 
 ---
 
@@ -352,7 +354,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 🛠 [Typekit Web Font Loader](https://github.com/typekit/webfontloader)
 
-**[⬆ back to top](#-table-of-contents)**
+**[⬆ 返回目錄](#目錄)**
 
 ---
 
@@ -436,7 +438,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 - 📖
   [Building RTL-Aware Web Apps & Websites: Part 2 - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/)
 
-**[⬆ back to top](#-table-of-contents)**
+**[⬆ 返回目錄](#目錄)**
 
 ---
 
@@ -470,7 +472,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 - [ ] **Lazy loading（延遲載入）:** ![Medium][medium_img] 圖片應使用 Lazy Load 技術（並提供 noscript 無程式碼的備案）。
   - 🛠 [Native lazy loading polyfill](https://github.com/mfranzke/loading-attribute-polyfill/)
 
-**[⬆ back to top](#-table-of-contents)**
+**[⬆ 返回目錄](#目錄)**
 
 ---
 
@@ -515,7 +517,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 📖 [ESLint - The pluggable linting utility for JavaScript and JSX](https://eslint.org/)
 
-**[⬆ back to top](#-table-of-contents)**
+**[⬆ 返回目錄](#目錄)**
 
 ---
 
@@ -572,7 +574,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 - 📖 [CSP Cheat Sheet - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
 - 📖 [Content Security Policy Reference](https://content-security-policy.com/)
 
-**[⬆ back to top](#-table-of-contents)**
+**[⬆ 返回目錄](#目錄)**
 
 ---
 
@@ -647,7 +649,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 - 🛠 [GTmetrix - Website speed and performance optimization](https://gtmetrix.com/)
 - 🛠 [Speedrank - Improve the performance of your website](https://speedrank.app/)
 
-**[⬆ back to top](#-table-of-contents)**
+**[⬆ 返回目錄](#目錄)**
 
 ## Accessibility 無障礙
 
@@ -698,7 +700,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 - 📹
   [管理 Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
-**[⬆ back to top](#-table-of-contents)**
+**[⬆ 返回目錄](#目錄)**
 
 ## SEO
 
@@ -735,7 +737,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 📖 [Sitemap guidelines - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
 
-**[⬆ back to top](#-table-of-contents)**
+**[⬆ 返回目錄](#目錄)**
 
 ## Translations
 
@@ -784,7 +786,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**[⬆ back to top](#-table-of-contents)**
+**[⬆ 返回目錄](#目錄)**
 
 [low_img]: https://raw.githubusercontent.com/thedaviddias/Front-End-Checklist/refs/heads/main/data/images/priority/low.svg
 [medium_img]: https://raw.githubusercontent.com/thedaviddias/Front-End-Checklist/refs/heads/main/data/images/priority/medium.svg
