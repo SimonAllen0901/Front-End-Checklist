@@ -58,7 +58,7 @@
 
 ### Meta 標籤
 
-- [ ] **Doctype （檔案類型）** ![High][high_img] Doctype 是 HTML5，同時要放在 HTML 頁面的最上面。
+- [ ] **Doctype （檔案類型）** ![High][high_img] Doctype 是 HTML5，需要放在 HTML 檔案內的最上面。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -69,9 +69,9 @@
 - 📖
   [Determining the character encoding - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
 
-_The next 2 meta tags (Charset and Viewport) need to come first in the head._
+_而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<head>` 內的最前面！_
 
-- [ ] **Charset:** ![High][high_img] The charset (UTF-8) is declared correctly.
+- [ ] **Charset:** ![High][high_img] 正確宣告字符編碼（UTF-8）。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -80,7 +80,7 @@ _The next 2 meta tags (Charset and Viewport) need to come first in the head._
 ```
 <!-- prettier-ignore-end -->
 
-- [ ] **Viewport:** ![High][high_img] The viewport is declared correctly.
+- [ ] **Viewport:** ![High][high_img] 正確宣告 viewport 設定。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -89,7 +89,7 @@ _The next 2 meta tags (Charset and Viewport) need to come first in the head._
 ```
 <!-- prettier-ignore-end -->
 
-- [ ] **Title:** ![High][high_img] A title is used on all pages (SEO: Google calculates the pixel width of the characters used in the title, and it cuts off between 472 and 482 pixels. The average character limit would be around 55-characters).
+- [ ] **Title:** ![High][high_img] 所有頁面都要設定標題 （SEO: Google 會計算 title 上使用的字符寬度，只會偵測到 472px ~ 482px 之間。平均最大值是 55 個字符）
 
 ```html
 <!-- Document Title -->
@@ -99,8 +99,7 @@ _The next 2 meta tags (Charset and Viewport) need to come first in the head._
 - 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
 - 🛠 [SERP Snippet Generator](https://www.sistrix.com/serp-snippet-generator/)
 
-- [ ] **Description:** ![High][high_img] A meta description is provided, it is unique and doesn't possess more than 150
-      characters.
+- [ ] **Description:** ![High][high_img] 有設置 meta description，每個頁面只有一個且長度不能超過150字元。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -112,10 +111,7 @@ _The next 2 meta tags (Charset and Viewport) need to come first in the head._
 - 📖
   [Meta Description - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
 
-- [ ] **Favicons:** ![Medium][medium_img] Each favicon has been created and displays correctly. If you have only a
-      `favicon.ico`, put it at the root of your site. Normally you won't need to use any markup. However, it's still
-      good practice to link to it using the example below. Today, **PNG format is recommended** over `.ico` format
-      (dimensions: 32x32px).
+- [ ] **Favicons:** ![Medium][medium_img] 每一個 favicon 都需要創立且被正確展示。如果你只有一個 `favicon.ico`，可以將它置於網站的根目錄好讀取。通常你不需要對它設定。然而現在還是建議照下方的範例手動連結，以確保最佳實踐。現在比起 `.icon` 比較推薦 PNG 檔案格式。（大小最少需要: 32x32px）
 
 <!-- prettier-ignore-start -->
 ```html
@@ -134,7 +130,7 @@ _The next 2 meta tags (Charset and Viewport) need to come first in the head._
 - 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
 - 📖 [PNG favicons - caniuse](https://caniuse.com/link-icon-png)
 
-- [ ] **Apple Web App Meta:** ![Low][low_img] Apple meta-tags are present.
+- [ ] **Apple Web App Meta:** ![Low][low_img] 包含 Apple 專用的 Meta 標籤。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -153,7 +149,7 @@ _The next 2 meta tags (Charset and Viewport) need to come first in the head._
 - 📖 [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 - 📖 [Supported Meta Tags](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
-- [ ] **Windows Tiles:** ![Low][low_img] Windows tiles are present and linked.
+- [ ] **Windows Tiles:** ![Low][low_img] 設置並連結 Windows Titels
 
 <!-- prettier-ignore-start -->
 ```html
@@ -162,7 +158,7 @@ _The next 2 meta tags (Charset and Viewport) need to come first in the head._
 ```
 <!-- prettier-ignore-end -->
 
-Minimum required xml markup for the `browserconfig.xml` file is as follows:
+`browserconfig.xml` 檔案中 xml 的最小設定值如下:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -182,7 +178,7 @@ Minimum required xml markup for the `browserconfig.xml` file is as follows:
 - 📖 [Browser configuration schema reference](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85))
 <!-- prettier-ignore-end -->
 
-- [ ] **Canonical:** ![Medium][medium_img] Use `rel="canonical"` to avoid duplicate content.
+- [ ] **Canonical:** ![Medium][medium_img] 使用 `rel="canonical"` 避免重複的內容。
 
 <!-- prettier-ignore-start -->
 ```html
