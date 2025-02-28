@@ -58,7 +58,7 @@
 
 ### Meta 標籤
 
-- [ ] **Doctype （檔案類型）** ![High][high_img] Doctype 是 HTML5，需要放在 HTML 檔案內的最上面。
+- [ ] **Doctype （檔案類型）:** ![High][high_img] Doctype 是 HTML5，需要放在 HTML 檔案內的最上面。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -71,7 +71,7 @@
 
 _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<head>` 內的最前面！_
 
-- [ ] **Charset:** ![High][high_img] 正確宣告字符編碼（UTF-8）。
+- [ ] **Charset（字符）:** ![High][high_img] 正確宣告字符編碼（UTF-8）。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -80,7 +80,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 ```
 <!-- prettier-ignore-end -->
 
-- [ ] **Viewport:** ![High][high_img] 正確宣告 viewport 設定。
+- [ ] **Viewport（視點）:** ![High][high_img] 正確宣告 viewport 設定。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -89,7 +89,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 ```
 <!-- prettier-ignore-end -->
 
-- [ ] **Title:** ![High][high_img] 所有頁面都要設定標題 （SEO: Google 會計算 title 上使用的字符寬度，只會偵測到 472px ~ 482px 之間。平均最大值是 55 個字符）
+- [ ] **Title（標題）:** ![High][high_img] 所有頁面都有使用一個標題 （SEO: Google 會計算 title 上使用的字符寬度，只會偵測到 472px ~ 482px 之間。平均最大值是 55 個字符）
 
 ```html
 <!-- Document Title -->
@@ -99,7 +99,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 - 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
 - 🛠 [SERP Snippet Generator](https://www.sistrix.com/serp-snippet-generator/)
 
-- [ ] **Description:** ![High][high_img] 有設置 meta description，每個頁面只有一個且長度不能超過150字元。
+- [ ] **Description（描述）:** ![High][high_img] 有設置 meta description，每個頁面只有一個且長度不能超過150字元。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -111,7 +111,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 - 📖
   [Meta Description - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
 
-- [ ] **Favicons:** ![Medium][medium_img] 每一個 favicon 都需要創立且被正確展示。如果你只有一個 `favicon.ico`，可以將它置於網站的根目錄好讀取。通常你不需要對它設定。然而現在還是建議照下方的範例手動連結，以確保最佳實踐。現在比起 `.icon` 比較推薦 PNG 檔案格式。（大小最少需要: 32x32px）
+- [ ] **Favicons（網站圖示）:** ![Medium][medium_img] 每一個 favicon 都需要創立且被正確展示。如果你只有一個 `favicon.ico`，可以將它置於網站的根目錄好讀取。通常你不需要對它設定。然而現在還是建議照下方的範例手動連結，以確保最佳實踐。現在比起 `.icon` 比較推薦 PNG 檔案格式。（大小最少需要: 32x32px）
 
 <!-- prettier-ignore-start -->
 ```html
@@ -178,7 +178,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 - 📖 [Browser configuration schema reference](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85))
 <!-- prettier-ignore-end -->
 
-- [ ] **Canonical:** ![Medium][medium_img] 使用 `rel="canonical"` 避免重複的內容。
+- [ ] **Canonical（原典）:** ![Medium][medium_img] 使用 `rel="canonical"` 避免重複的內容。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -194,13 +194,13 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 ### HTML 標籤
 
-- [ ] **Language attribute:** ![High][high_img] 語言屬性 `lang` 在網頁中被指定且與當前頁面的語言是相關的。
+- [ ] **Language attribute（語言標籤）** ![High][high_img] 語言屬性 `lang` 在網頁中被指定且與當前頁面的語言是相關的。
 
 ```html
 <html lang="en"></html>
 ```
 
-- [ ] **Direction attribute:** ![Medium][medium_img] 文字閱讀方向有被設定在 body 標籤內（也可以用在其他 HTML 標籤裡）。
+- [ ] **Direction attribute（方向標籤）:** ![Medium][medium_img] 文字閱讀方向有被設定在 body 標籤內（也可以用在其他 HTML 標籤裡）。
 
 ```html
 <html dir="rtl">
@@ -210,7 +210,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
 
-- [ ] **Alternate language:** ![Low][low_img] 語言標籤在網頁中被指定且與當前頁面的語言是相關的。
+- [ ] **Alternate language（備用語言）:** ![Low][low_img] 語言標籤在網頁中被指定且與當前頁面的語言是相關的。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -226,18 +226,18 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 📖 [x-default - Google](https://webmasters.googleblog.com/2013/04/x-default-hreflang-for-international-pages.html)
 
-- [ ] **Conditional comments:** ![Low][low_img] 如果有需要，已經為 IE 設定 Conditional comments。
+- [ ] **Conditional comments（條件備註）:** ![Low][low_img] 如果有需要，已經為 IE 設定 Conditional comments。
 
 - 📖
   [About conditional comments (Internet Explorer) - MSDN - Microsoft](<https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx>)
 
-- [ ] **RSS feed:** ![Low][low_img] 如果網站是部落格或者會分享文章，設置 RSS 連結。
+- [ ] **RSS feed（RSS 訂閱）:** ![Low][low_img] 如果網站是部落格或者會分享文章，設置 RSS 連結。
 
-- [ ] **CSS Critical:** ![Medium][medium_img] CSS critical 將使用在頁面顯示部分的核心 CSS 收集起來，在主要的CSS被呼叫之前就先渲染。它以放置於<style></style>間的形式嵌在檔案中(單行形式、最小化)。
+- [ ] **CSS Critical（最小 CSS 合集）:** ![Medium][medium_img] CSS critical 將使用在頁面顯示部分的核心 CSS 收集起來，在主要的CSS被呼叫之前就先渲染。它以放置於<style></style>間的形式嵌在檔案中(單行形式、最小化)。
 
 - 🛠 [Critical by Addy Osmani on GitHub](https://github.com/addyosmani/critical) 使這一過程自動化。
 
-- [ ] **CSS order:** ![High][high_img] 在 `<head>` 哩，所有 CSS 檔案都要在 JS 檔案前被載入。（例外狀況: 當 JS 檔案以非同步方式在頁面上方被載入）
+- [ ] **CSS order（CSS 順序）:** ![High][high_img] 在 `<head>` 哩，所有 CSS 檔案都要在 JS 檔案前被載入。（例外狀況: 當 JS 檔案以非同步方式在頁面上方被載入）
 
 ### 社交媒體的 meta 標籤
 
@@ -245,7 +245,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 針對所有網頁都高度推薦 **_Facebook OG_** 與 **_Twitter Cards_**。關於其他社交媒體的標籤，當你有特別想要確保的社交媒體的顯示功能再考慮。
 
-- [ ] **Facebook Open Graph:** ![Low][low_img] 所有 Facebook Open Graph (OG) 都有測試過且沒有遺漏掉或出現失敗的訊息。圖檔最小需要 600x315px，推薦大小 1200x630px。
+- [ ] **Facebook Open Graph（FB 開放圖形）:** ![Low][low_img] 所有 Facebook Open Graph (OG) 都有測試過且沒有遺漏掉或出現失敗的訊息。圖檔最小需要 600x315px，推薦大小 1200x630px。
 
 <!-- prettier-ignore-start -->
 > [!NOTE]
@@ -295,20 +295,20 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 ### 最佳實踐
 
-- [ ] **HTML5 Semantic Elements（HTML5 語意元素）** ![High][high_img] HTML5 Semantic Elements 語意元素被適當使用(header, section, footer, main...)。
+- [ ] **HTML5 Semantic Elements（HTML5 語意元素）:** ![High][high_img] HTML5 Semantic Elements 語意元素被適當使用(header, section, footer, main...)。
 
 - 📖 [HTML Reference](http://htmlreference.io/)
 
-- [ ] **Error pages（錯誤頁面）** ![High][high_img] 404 錯誤頁面跟存在 5xx 錯誤的情況需要它自己的 CSS 程式碼(不要從當前的服務向外呼叫)。
+- [ ] **Error pages（錯誤頁面）:** ![High][high_img] 404 錯誤頁面跟存在 5xx 錯誤的情況需要它自己的 CSS 程式碼(不要從當前的服務向外呼叫)。
 
 - [ ] **Noopener:** ![Medium][medium_img] 注意當你有外部連結且使用 `target="_blank"` 時，在連結加上 `rel="noopener"`，可以避免 tab nabbing (開啟新 tab 時造成原頁面效能低落)。若你要支援舊版 Firefox，使用 `rel="noopener noreferrer"`。
 - 📖 [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
 
-- [ ] **Clean up comments（清除註解）** ![Low][low_img] 頁面發表前將沒有效果的程式碼清除。
+- [ ] **Clean up comments（清除註解）:** ![Low][low_img] 頁面發表前將沒有效果的程式碼清除。
 
 ### HTML 測試
 
-- [ ] **W3C compliant(W3C 兼容)** ![High][high_img] 所有頁面都要經過 W3C 檢測器的測試，確保沒有 HTML 程式碼的問題。
+- [ ] **W3C compliant（W3C 兼容）:** ![High][high_img] 所有頁面都要經過 W3C 檢測器的測試，確保沒有 HTML 程式碼的問題。
 
 - 🛠 [W3C validator](https://validator.w3.org/)
 
@@ -318,11 +318,11 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 🛠 [webhint](https://webhint.io/)
 
-- [ ] **Link checker:** ![High][high_img] 使用 Link checker 確保沒有任何無效連結，避免出現任何 404 error。
+- [ ] **Link checker（連結確認器）:** ![High][high_img] 使用 Link checker 確保沒有任何無效連結，避免出現任何 404 error。
 
 - 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
 
-- [ ] **Adblockers test:** ![Medium][medium_img] 測試你的頁面在廣告阻斷程式運作的情況下能正確顯示（你可以顯示訊息慫恿使用者關閉廣告阻斷程式）。
+- [ ] **Adblockers test（廣告阻擋外掛測試）:** ![Medium][medium_img] 測試你的頁面在廣告阻斷程式運作的情況下能正確顯示（你可以顯示訊息慫恿使用者關閉廣告阻斷程式）。
 
 - 📖
   [Use AdBlocking in your Dev Environment](https://andreicioara.com/use-adblocking-in-your-dev-environment-48db500d9b86)
@@ -339,16 +339,16 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 📖 [Google Technical considerations about webfonts](https://developers.google.com/fonts/docs/technical_considerations)
 
-- [ ] **Webfont format:** ![High][high_img]  所有瀏覽器都支援 WOFF、WOFF2 跟 TTF 字體。
+- [ ] **Webfont format（網頁字體格式）:** ![High][high_img]  所有瀏覽器都支援 WOFF、WOFF2 跟 TTF 字體。
 
 - 📖 [WOFF - Web Open Font Format - Caniuse](https://caniuse.com/woff).
 - 📖 [WOFF 2.0 - Web Open Font Format - Caniuse](https://caniuse.com/woff2).
 - 📖 [TTF/OTF - TrueType and OpenType font support](https://caniuse.com/ttf)
 - 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
-- [ ] **Webfont size:** ![High][high_img] 網頁字體檔案大小不能超過 2MB （包含所有字體）。
+- [ ] **Webfont size（網頁字體大小）:** ![High][high_img] 網頁字體檔案大小不能超過 2MB （包含所有字體）。
 
-- [ ] **Webfont loader:** ![Low][low_img] 利用 webfont loader 網頁字體加載器控制載入的行為。
+- [ ] **Webfont loader（網頁字體加載器）:** ![Low][low_img] 利用 webfont loader 網頁字體加載器控制載入的行為。
 
 - 🛠 [Typekit Web Font Loader](https://github.com/typekit/webfontloader)
 
@@ -363,18 +363,18 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 > 如果你對 CSS 屬性有疑問，可查閱 [CSS Reference](http://cssreference.io/)。
 > 此外還有一份簡潔的 [Code Guide](http://codeguide.co/) ，可用來維持程式碼的一致性！
 
-- [ ] **Responsive Web Design:** ![High][high_img] 網站有使用響應式設計。
-- [ ] **CSS Print:** ![Medium][medium_img] 每個頁面都正確設置列印樣式。
-- [ ] **Preprocessors:** ![Low][low_img]  你的頁面有使用 CSS 預處理器（推薦 [Sass](http://sass-lang.com/),
+- [ ] **Responsive Web Design（網站響應式設計）:** ![High][high_img] 網站有使用響應式設計。
+- [ ] **CSS Print（CSS 列印）:** ![Medium][medium_img] 每個頁面都正確設置列印樣式。
+- [ ] **Preprocessors（預處理器）:** ![Low][low_img]  你的頁面有使用 CSS 預處理器（推薦 [Sass](http://sass-lang.com/),
       [Less](http://lesscss.org/), [Stylus](http://stylus-lang.com/)）.
-- [ ] **Unique ID:** ![High][high_img] 使用 ID 的時候確保個別頁面裡沒有重複 ID。
-- [ ] **Reset CSS:** ![High][high_img] 確保 CSS reset （reset, normalize or reboot）被使用 _(如果你使用 CSS 框架，例如 Bootstrap 或 Foundation，Normalize 已經包含在裡面)_。
+- [ ] **Unique ID（唯一 ID）:** ![High][high_img] 使用 ID 的時候確保個別頁面裡沒有重複 ID。
+- [ ] **Reset CSS（重置 CSS 樣式）:** ![High][high_img] 確保 CSS reset （reset, normalize or reboot）被使用 _(如果你使用 CSS 框架，例如 Bootstrap 或 Foundation，Normalize 已經包含在裡面)_。
 
 - 📖 [Reset.css](https://meyerweb.com/eric/tools/css/reset/)
 - 📖 [Normalize.css](https://necolas.github.io/normalize.css/)
 - 📖 [Reboot](https://getbootstrap.com/docs/4.0/content/reboot/)
 
-- [ ] **JS prefix:** ![Low][low_img] 所有 JavaScript 檔案中會用的 class（或 id）均以 `js-` 作為前綴區別，並且 CSS 不該套用樣式給所有含 `js-` 前綴，將 `js-` 保留只給 JavaScript 操作。
+- [ ] **JS prefix（區分 JS 前綴）:** ![Low][low_img] 所有 JavaScript 檔案中會用的 class（或 id）均以 `js-` 作為前綴區別，並且 CSS 不該套用樣式給所有含 `js-` 前綴，將 `js-` 保留只給 JavaScript 操作。
 
 ```html
 <div id="js-slider" class="my-slider">
@@ -383,53 +383,53 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 </div>
 ```
 
-- [ ] **embedded or inline CSS:** ![High][high_img] 避免在  `<style>` 標籤內嵌 CSS 或使用行內 CSS，除非有正當理由（例如設定輪播圖的 `background-image` 或關鍵 CSS）。
-- [ ] **Vendor prefixes:** ![High][high_img] 已經使用了 CSS 的 vendor prefixes，且依照瀏覽器支援與相容狀況自動生成相對應的 CSS 前綴。
+- [ ] **embedded or inline CSS（CSS 的嵌入）:** ![High][high_img] 避免在  `<style>` 標籤內嵌 CSS 或使用行內 CSS，除非有正當理由（例如設定輪播圖的 `background-image` 或關鍵 CSS）。
+- [ ] **Vendor prefixes（前綴產生器）:** ![High][high_img] 已經使用了 CSS 的 vendor prefixes，且依照瀏覽器支援與相容狀況自動生成相對應的 CSS 前綴。
 
 - 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
 
 ### CSS Performance
 
-- [ ] **Concatenation:** ![High][high_img] CSS 檔案已合併為單一檔案（HTTP/2 不適用）。
-- [ ] **Minification:** ![High][high_img] 所有 CSS 檔案均已壓縮（Minified）。
-- [ ] **Non-blocking:** ![Medium][medium_img] CSS 檔案應設為非阻塞（non-blocking），避免還在抓取 DOM 時就載入。
+- [ ] **Concatenation（並列）:** ![High][high_img] CSS 檔案已合併為單一檔案（HTTP/2 不適用）。
+- [ ] **Minification（最小化）:** ![High][high_img] 所有 CSS 檔案均已壓縮（Minified）。
+- [ ] **Non-blocking（不阻塞）:** ![Medium][medium_img] CSS 檔案應設為非阻塞（non-blocking），避免還在抓取 DOM 時就載入。
 
 - 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
 - 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
 
-- [ ] **Unused CSS:** ![Low][low_img] 移除沒用到的 CSS。
+- [ ] **Unused CSS（無用 CSS）:** ![Low][low_img] 移除沒用到的 CSS。
 
 - 🛠 [UnCSS Online](https://uncss-online.com/)
 - 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
 - 🛠 [PurgeCSS](https://github.com/FullHuman/purgecss)
 - 🛠 [Chrome DevTools Coverage](https://developer.chrome.com/docs/devtools/coverage/)
 
-### CSS testing
+### CSS 測試
 
 - [ ] **Stylelint:** ![High][high_img] 檢測所有 CSS、SCSS 或樣式檔案都沒有錯誤。
 
 - 🛠 [stylelint, a CSS linter](https://stylelint.io/)
 - 📖 [Sass guidelines](https://sass-guidelin.es/)
 
-- [ ] **Responsive web design:** ![High][high_img] 所有頁面至少測試下列寬度斷點 320px, 768px, 1024px (可以依照你的客戶群進行增減)的**響應式測式**。
+- [ ] **Responsive web design（響應式設計）:** ![High][high_img] 所有頁面至少測試下列寬度斷點 320px, 768px, 1024px (可以依照你的客戶群進行增減)的**響應式測式**。
 
   - 🛠 [Am I Responsive?](http://ami.responsivedesign.is/)
   - 🛠 [Mobile Friendly Test](https://search.google.com/test/mobile-friendly)
   - 🛠 [Responsive Website Design Tester](https://responsivedesignchecker.com/)
 
-- [ ] **CSS Validator:** ![Medium][medium_img] 測試 CSS 並且修正相關錯誤。
+- [ ] **CSS Validator（CSS 檢測）:** ![Medium][medium_img] 測試 CSS 並且修正相關錯誤。
 
 - 🛠 [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-- [ ] **Desktop Browsers （桌上瀏覽器）** ![High][high_img] 所有頁面都經過所有桌上瀏覽器的測試（Safari, Firefox, Chrome, Internet Explorer, EDGE...）。
-- [ ] **Mobile Browsers （手機瀏覽器）** ![High][high_img] 所有頁面都經過所有手機瀏覽器的測試（Native browser, Chrome, Safari...）。
-- [ ] **OS （作業系統）** ![High][high_img] 所有頁面都經過所有作業系統的測試（Windows, Android, iOS, Mac...）。
+- [ ] **Desktop Browsers （桌上瀏覽器）:** ![High][high_img] 所有頁面都經過所有桌上瀏覽器的測試（Safari, Firefox, Chrome, Internet Explorer, EDGE...）。
+- [ ] **Mobile Browsers （手機瀏覽器）:** ![High][high_img] 所有頁面都經過所有手機瀏覽器的測試（Native browser, Chrome, Safari...）。
+- [ ] **OS （作業系統）:** ![High][high_img] 所有頁面都經過所有作業系統的測試（Windows, Android, iOS, Mac...）。
 
-- [ ] **Design fidelity （設計忠實度）** ![Low][low_img] 根據專案需求與設計的品質，可能需要盡量貼近設計稿。你可以使用工具來比較設計稿與程式碼實作，盡量確保視覺的一致性。
+- [ ] **Design fidelity （忠實呈現設計）:** ![Low][low_img] 根據專案需求與設計的品質，可能需要盡量貼近設計稿。你可以使用工具來比較設計稿與程式碼實作，盡量確保視覺的一致性。
 
 > [Pixel Perfect - Chrome Extension](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 
-- [ ] **Reading direction （閱讀方向）** ![High][high_img] 如果有其他語系會被使用到的話，針對所有頁面都使用 LTR 跟 RTL 閱讀方向測試過。
+- [ ] **Reading direction （閱讀方向）:** ![High][high_img] 如果有其他語系會被使用到的話，針對所有頁面都使用 LTR 跟 RTL 閱讀方向測試過。
 
 - 📖
   [Building RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
@@ -446,7 +446,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 ### 最佳實踐
 
-- [ ] **Optimization:** ![High][high_img] 所有圖片均已最佳化，以確保在瀏覽器中順暢渲染。 關鍵頁面（如首頁）可考慮使用 WebP 格式以提升效能。
+- [ ] **Optimization（最佳化）:** ![High][high_img] 所有圖片均已最佳化，以確保在瀏覽器中順暢渲染。 關鍵頁面（如首頁）可考慮使用 WebP 格式以提升效能。
 
 - 🛠 [Imagemin](https://github.com/imagemin/imagemin)
 - 🛠 利用 [ImageOptim](https://imageoptim.com/) 免費最佳化您的圖片。
@@ -460,14 +460,14 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 📖 [How to Build Responsive Images with srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/)
 
-- [ ] **Retina:** ![Low][low_img] 你有提供 2x 或 3x 解析度的版面圖片，以支援 Retina 顯示器。
-- [ ] **Sprite:** ![Medium][medium_img] 小型圖片應使用 Sprite 檔案（圖示可使用 SVG Sprite）。
-- [ ] **Width and Height:** ![High][high_img] 若已知最終渲染的圖片大小，應在 `<img>` 標籤上設定 `width` 和 `height` 屬性（若使用 CSS 控制大小則可省略）。
-- [ ] **Alternative text:** ![High][high_img] 所有 `<img>` 標籤都應包含描述圖片內容的替代文字（Alt Text）。
+- [ ] **Retina（視網膜螢幕）:** ![Low][low_img] 你有提供 2x 或 3x 解析度的版面圖片，以支援 Retina 顯示器。
+- [ ] **Sprite（雪碧圖）:** ![Medium][medium_img] 小型圖片應使用 Sprite 檔案（圖示可使用 SVG Sprite）。
+- [ ] **Width and Height（寬與高）:** ![High][high_img] 若已知最終渲染的圖片大小，應在 `<img>` 標籤上設定 `width` 和 `height` 屬性（若使用 CSS 控制大小則可省略）。
+- [ ] **Alternative text（補充文字）:** ![High][high_img] 所有 `<img>` 標籤都應包含描述圖片內容的替代文字（Alt Text）。
 
 - 📖 [Alt-texts: The Ultimate Guide](https://axesslab.com/alt-texts/)
 
-- [ ] **Lazy loading:** ![Medium][medium_img] 圖片應使用 Lazy Load 技術（並提供 noscript 無程式碼的備案）。
+- [ ] **Lazy loading（延遲載入）:** ![Medium][medium_img] 圖片應使用 Lazy Load 技術（並提供 noscript 無程式碼的備案）。
   - 🛠 [Native lazy loading polyfill](https://github.com/mfranzke/loading-attribute-polyfill/)
 
 **[⬆ back to top](#-table-of-contents)**
@@ -478,13 +478,13 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 ### 最佳實踐
 
-- [ ] **JavaScript Inline:** ![High][high_img] 避免在 HTML 內嵌 JavaScript 程式碼（應將 JS 置於獨立檔案中）。
-- [ ] **Concatenation:** ![High][high_img] JavaScript 檔案應進行合併（Concatenation）。
-- [ ] **Minification:** ![High][high_img] JavaScript 檔案應進行壓縮（Minification），並加上 .min 後綴標示。
+- [ ] **JavaScript Inline（HTML 中的行內 JS）:** ![High][high_img] 避免在 HTML 內嵌 JavaScript 程式碼（應將 JS 置於獨立檔案中）。
+- [ ] **Concatenation（並列）:** ![High][high_img] JavaScript 檔案應進行合併（Concatenation）。
+- [ ] **Minification（最小化）:** ![High][high_img] JavaScript 檔案應進行壓縮（Minification），並加上 .min 後綴標示。
 
 - 📖 [Minify Resources (HTML, CSS, and JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources)
 
-- [ ] **JavaScript security:** ![High][high_img]
+- [ ] **JavaScript security（JavaScript 安全性）:** ![High][high_img]
 
 - 📖
   [Guidelines for Developing Secure Applications Utilizing JavaScript](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)
@@ -496,11 +496,11 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 <noscript> You need to enable JavaScript to run this app. </noscript>
 ```
 
-- [ ] **Non-blocking:** ![Medium][medium_img] 使用 `async` 或 `defer` 屬性來非同步載入 JavaScript，減少渲染阻塞。
+- [ ] **Non-blocking（不阻塞）:** ![Medium][medium_img] 使用 `async` 或 `defer` 屬性來非同步載入 JavaScript，減少渲染阻塞。
 
 - 📖 [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
 
-- [ ] **Optimized and updated JS libraries:** ![Medium][medium_img] 確保你專案中所有 JavaScript 函式庫皆為必要的，並將其更新至最新版本。對於簡單功能，建議使用 Vanilla JavaScript 以減少依賴。
+- [ ] **Optimized and updated JS libraries（更新並最佳化 JS 套件）:** ![Medium][medium_img] 確保你專案中所有 JavaScript 函式庫或套件皆為必要的，並將其更新至最新版本。對於簡單功能，建議使用 Vanilla JavaScript 以減少依賴。
 
 - 📖 [You may not need jQuery](http://youmightnotneedjquery.com/)
 - 📖 [Vanilla JavaScript for building powerful web applications](https://plainjs.com/)
@@ -509,7 +509,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 🛠 [Customize your Modernizr](https://modernizr.com/download?setclasses)
 
-### JavaScript testing
+### JavaScript 測試
 
 - [ ] **ESLint:** ![High][high_img] 確保 ESLint 不報錯，並符合專案的設定或標準規則。
 
