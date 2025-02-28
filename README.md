@@ -21,7 +21,7 @@
 - [JavaScript](#javascript)
 - [Security](#security)
 - [Performance](#performance)
-- [Accessibility](#accessibility)
+- [Accessibility 無障礙](#accessibility-無障礙)
 - [SEO](#seo)
 - [Translations](#translations)
 - [Support](#support)
