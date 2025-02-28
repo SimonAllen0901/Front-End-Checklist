@@ -758,43 +758,36 @@ considered if you target a particular presence on those and want to ensure the d
 
 ## SEO
 
-- [ ] **Google Analytics:** ![Low][low_img] Google Analytics is installed and correctly configured.
+- [ ] **Google Analytics:** ![Low][low_img] 確認 Google Analytics 已經安裝且確實的設定好。
 
 - 🛠 [Google Analytics](https://analytics.google.com/analytics/web/)
 - 🛠 [GA Checker (and others)](http://www.gachecker.com/)
 
-- [ ] **Search Console:** ![Low][low_img] Search Console is installed and correctly configured. It is a free service
-      offered by Google that helps you monitor, maintain, and troubleshoot your site's presence in Google Search
-      results.
+- [ ] **Search Console:** ![Low][low_img] 已安裝並正確設定 Search Console。這是 Google 提供的免費服務，可幫助你監控、維護並排除網站在 Google 搜尋結果中的問題。
 
 - 🛠 [Search Console](https://search.google.com/search-console/about)
 
-- [ ] **Headings logic:** ![Medium][medium_img] Heading text helps to understand the content in the current page.
+- [ ] **Headings logic:** ![Medium][medium_img] Headings 有助於理解這個頁面的內容。
 
 - 🛠 [Tota11y, tab Headings](http://khan.github.io/tota11y/#Try-it)
 
-- [ ] **sitemap.xml:** ![High][high_img] A sitemap.xml exists and was submitted to Google Search Console (previously
-      Google Webmaster Tools).
+- [ ] **sitemap.xml:** ![High][high_img] 確認有 sitemap.xml 且已經提交給 Google Search Console（Google 搜尋引擎管理者，即之前的 Google 頁面管理者工具）。
 
 - 🛠 [Sitemap generator](https://websiteseochecker.com/html-sitemap-generator/)
 
-- [ ] **robots.txt:** ![High][high_img] The robots.txt is not blocking webpages.
+- [ ] **robots.txt:** ![High][high_img] Robots.txt 不會破壞網頁。
 
-- 🛠 Test your robots.txt with [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool)
+- 🛠 利用 [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool) 測試你的robots.txt。
 
-- [ ] **Structured Data:** ![High][high_img] Pages using structured data are tested and are without errors. Structured
-      data helps crawlers understand the content in the current page.
+- [ ] **Structured Data:** ![High][high_img] 確認所有頁面使用了結構化資料且已經測試過沒有出現錯誤。結構化資料會協助爬蟲理解這個頁面的內容。
 
-- 📖
-  [Introduction to Structured Data - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
+- 📖 [介紹 Structured Data - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
 - 📖 [JSON-LD](https://json-ld.org/)
 - 📖 [Microdata](https://www.w3.org/TR/microdata/)
-- 🛠 Test your page with the [Rich Results Test](https://search.google.com/test/rich-results)
-- 🛠 Complete list of vocabularies that can be used as structured data.
-  [Schema.org Full Hierarchy](http://schema.org/docs/full.html)
+- 🛠 利用 [Rich Results Test](https://search.google.com/test/rich-results) 測試你的網頁
+- 🛠 適用於結構化資料的完整詞彙列表。[Schema.org Full Hierarchy](http://schema.org/docs/full.html)
 
-- [ ] **Sitemap HTML:** ![Medium][medium_img] An HTML sitemap is provided and is accessible via a link in the footer of
-      your website.
+- [ ] **Sitemap HTML:** ![Medium][medium_img] 已經設置 HTML sitemap 網站地圖，並且可以透過網站 footer 中的連結轉導進入。
 
 - 📖 [Sitemap guidelines - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
 
@@ -802,7 +795,7 @@ considered if you target a particular presence on those and want to ensure the d
 
 ## Translations
 
-The Front-End Checklist is also available in other languages. Thanks for all translators and their awesome work!
+前端待辦清單還有其他語言版本！感謝所有翻譯者的貢獻，你們的努力太棒了！
 
 - 🇯🇵 Japanese: [miya0001/Front-End-Checklist](https://github.com/miya0001/Front-End-Checklist)
 - 🇪🇸 Spanish: [eoasakura/Front-End-Checklist-ES](https://github.com/eoasakura/Front-End-Checklist-ES)
@@ -820,26 +813,26 @@ The Front-End Checklist is also available in other languages. Thanks for all tra
 
 ## Support
 
-If you have any question or suggestion, don't hesitate to reach me on X:
+如果你有任何問題或建議，請隨時透過 X 與我聯繫：
 
 - [X (formerly Twitter)](https://ddias.link/x)
 - [Chat on Discord](https://ddias.link/discord)
 
 ## Contributors
 
-This project exists thanks to all the people who contribute. ([Contribute](https://github.com/thedaviddias/Front-End-Checklist/blob/main/CONTRIBUTING.md)).
+這個專案的存在要感謝所有貢獻者！ ([Contribute](https://github.com/thedaviddias/Front-End-Checklist/blob/main/CONTRIBUTING.md)).
 <a href="https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" alt="Contributors" /></a>
 
 ## Backers
 
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/front-end-checklist#backer)]
+感謝所有支持我們的贊助者！ 🙏 [[成為贊助者](https://opencollective.com/front-end-checklist#backer)]
 
 <a href="https://opencollective.com/front-end-checklist#backers" target="_blank"><img src="https://opencollective.com/front-end-checklist/backers.svg?width=890" alt="Backers" /></a>
 
 ## Sponsors
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
-[[Become a sponsor](https://opencollective.com/front-end-checklist#sponsor)]
+支持這個專案，成為贊助商！你的 Logo 標誌將顯示在此處並連結至您的網站。
+[[成為贊助商](https://opencollective.com/front-end-checklist#sponsor)]
 
 <a href="https://opencollective.com/front-end-checklist" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/1/avatar.svg" alt="Sponsors" /></a>
 
