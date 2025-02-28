@@ -347,24 +347,24 @@ considered if you target a particular presence on those and want to ensure the d
 
 ---
 
-## Webfonts
+## Webfonts 網頁字體
 
 > [!NOTE]
-> Using web fonts may cause Flash Of Unstyled Text/Flash Of Invisible Text - consider having fallback fonts
-> and/or utilizing web font loaders to control behavior.
+> 使用 Web 字體（Webfonts）可能會導致 FOUT（文字閃爍異常） 或 FOIT（文字不可見異常）。
+> 請考慮使用後備字體或利用 webfont 網頁字體加載器來控制行為。
 
 - 📖 [Google Technical considerations about webfonts](https://developers.google.com/fonts/docs/technical_considerations)
 
-- [ ] **Webfont format:** ![High][high_img] WOFF, WOFF2 and TTF are supported by all modern browsers.
+- [ ] **Webfont format:** ![High][high_img]  所有瀏覽器都支援 WOFF、WOFF2 跟 TTF 字體。
 
 - 📖 [WOFF - Web Open Font Format - Caniuse](https://caniuse.com/woff).
 - 📖 [WOFF 2.0 - Web Open Font Format - Caniuse](https://caniuse.com/woff2).
 - 📖 [TTF/OTF - TrueType and OpenType font support](https://caniuse.com/ttf)
 - 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
-- [ ] **Webfont size:** ![High][high_img] Webfont sizes don't exceed 2 MB (all variants included).
+- [ ] **Webfont size:** ![High][high_img] 網頁字體檔案大小不能超過 2MB （包含所有字體）。
 
-- [ ] **Webfont loader:** ![Low][low_img] Control loading behavior with a webfont loader
+- [ ] **Webfont loader:** ![Low][low_img] 利用 webfont loader 網頁字體加載器控制載入的行為。
 
 - 🛠 [Typekit Web Font Loader](https://github.com/typekit/webfontloader)
 
@@ -374,24 +374,23 @@ considered if you target a particular presence on those and want to ensure the d
 
 ## CSS
 
-> **Notes:** Take a look at [CSS guidelines](https://cssguidelin.es/) and [Sass Guidelines](https://sass-guidelin.es/)
-> followed by most Front-End developers. If you have a doubt about CSS properties, you can visit
-> [CSS Reference](http://cssreference.io/). There is also a short [Code Guide](http://codeguide.co/) for consistency.
+> **補充：** 參考這些 CSS 標準與指南，以維持最佳實踐！
+> [CSS guidelines](https://cssguidelin.es/) 和 [Sass Guidelines](https://sass-guidelin.es/) 是大多數前端開發者遵循的標準。
+> 如果你對 CSS 屬性有疑問，可查閱 [CSS Reference](http://cssreference.io/)。
+> 此外還有一份簡潔的 [Code Guide](http://codeguide.co/) ，可用來維持程式碼的一致性！
 
-- [ ] **Responsive Web Design:** ![High][high_img] The website is using responsive web design.
-- [ ] **CSS Print:** ![Medium][medium_img] A print stylesheet is provided and is correct on each page.
-- [ ] **Preprocessors:** ![Low][low_img] Your project is using a CSS preprocessor (e.g [Sass](http://sass-lang.com/),
-      [Less](http://lesscss.org/), [Stylus](http://stylus-lang.com/)).
-- [ ] **Unique ID:** ![High][high_img] If IDs are used, they are unique to a page.
-- [ ] **Reset CSS:** ![High][high_img] A CSS reset (reset, normalize or reboot) is used and up to date. _(If you are
-      using a CSS Framework like Bootstrap or Foundation, a Normalize is already included into it.)_
+- [ ] **Responsive Web Design:** ![High][high_img] 網站有使用響應式設計。
+- [ ] **CSS Print:** ![Medium][medium_img] 每個頁面都正確設置列印樣式。
+- [ ] **Preprocessors:** ![Low][low_img]  你的頁面有使用 CSS 預處理器（推薦 [Sass](http://sass-lang.com/),
+      [Less](http://lesscss.org/), [Stylus](http://stylus-lang.com/)）.
+- [ ] **Unique ID:** ![High][high_img] 使用 ID 的時候確保個別頁面裡沒有重複 ID。
+- [ ] **Reset CSS:** ![High][high_img] 確保 CSS reset （reset, normalize or reboot）被使用 _(如果你使用 CSS 框架，例如 Bootstrap 或 Foundation，Normalize 已經包含在裡面)_。
 
 - 📖 [Reset.css](https://meyerweb.com/eric/tools/css/reset/)
 - 📖 [Normalize.css](https://necolas.github.io/normalize.css/)
 - 📖 [Reboot](https://getbootstrap.com/docs/4.0/content/reboot/)
 
-- [ ] **JS prefix:** ![Low][low_img] All classes (or id- used in JavaScript files) begin with **js-** and are not styled
-      into the CSS files.
+- [ ] **JS prefix:** ![Low][low_img] 所有 JavaScript 檔案中會用的 class（或 id）均以 `js-` 作為前綴區別，並且 CSS 不該套用樣式給所有含 `js-` 前綴，將 `js-` 保留只給 JavaScript 操作。
 
 ```html
 <div id="js-slider" class="my-slider">
@@ -400,24 +399,21 @@ considered if you target a particular presence on those and want to ensure the d
 </div>
 ```
 
-- [ ] **embedded or inline CSS:** ![High][high_img] Avoid at all cost embedding CSS in `<style>` tags or using inline
-      CSS: only use for valid reasons (e.g. background-image for slider, critical CSS).
-- [ ] **Vendor prefixes:** ![High][high_img] CSS vendor prefixes are used and are generated accordingly with your
-      browser support compatibility.
+- [ ] **embedded or inline CSS:** ![High][high_img] 避免在  `<style>` 標籤內嵌 CSS 或使用行內 CSS，除非有正當理由（例如設定輪播圖的 `background-image` 或關鍵 CSS）。
+- [ ] **Vendor prefixes:** ![High][high_img] 已經使用了 CSS 的 vendor prefixes，且依照瀏覽器支援與相容狀況自動生成相對應的 CSS 前綴。
 
 - 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
 
 ### CSS Performance
 
-- [ ] **Concatenation:** ![High][high_img] CSS files are concatenated in a single file _(Not for HTTP/2)_.
-- [ ] **Minification:** ![High][high_img] All CSS files are minified.
-- [ ] **Non-blocking:** ![Medium][medium_img] CSS files need to be non-blocking to prevent the DOM from taking time to
-      load.
+- [ ] **Concatenation:** ![High][high_img] CSS 檔案已合併為單一檔案（HTTP/2 不適用）。
+- [ ] **Minification:** ![High][high_img] 所有 CSS 檔案均已壓縮（Minified）。
+- [ ] **Non-blocking:** ![Medium][medium_img] CSS 檔案應設為非阻塞（non-blocking），避免還在抓取 DOM 時就載入。
 
 - 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
 - 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
 
-- [ ] **Unused CSS:** ![Low][low_img] Remove unused CSS.
+- [ ] **Unused CSS:** ![Low][low_img] 移除沒用到的 CSS。
 
 - 🛠 [UnCSS Online](https://uncss-online.com/)
 - 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
@@ -426,36 +422,30 @@ considered if you target a particular presence on those and want to ensure the d
 
 ### CSS testing
 
-- [ ] **Stylelint:** ![High][high_img] All CSS or SCSS files are without any errors.
+- [ ] **Stylelint:** ![High][high_img] 檢測所有 CSS、SCSS 或樣式檔案都沒有錯誤。
 
 - 🛠 [stylelint, a CSS linter](https://stylelint.io/)
 - 📖 [Sass guidelines](https://sass-guidelin.es/)
 
-- [ ] **Responsive web design:** ![High][high_img] All pages were tested at the following breakpoints: 320px, 768px,
-      1024px (can be more / different according to your analytics). **Responsive Checker -**
+- [ ] **Responsive web design:** ![High][high_img] 所有頁面至少測試下列寬度斷點 320px, 768px, 1024px (可以依照你的客戶群進行增減)的**響應式測式**。
 
   - 🛠 [Am I Responsive?](http://ami.responsivedesign.is/)
   - 🛠 [Mobile Friendly Test](https://search.google.com/test/mobile-friendly)
   - 🛠 [Responsive Website Design Tester](https://responsivedesignchecker.com/)
 
-- [ ] **CSS Validator:** ![Medium][medium_img] The CSS was tested and pertinent errors were corrected.
+- [ ] **CSS Validator:** ![Medium][medium_img] 測試 CSS 並且修正相關錯誤。
 
 - 🛠 [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-- [ ] **Desktop Browsers:** ![High][high_img] All pages were tested on all current desktop browsers (Safari, Firefox,
-      Chrome, Internet Explorer, EDGE...).
-- [ ] **Mobile Browsers:** ![High][high_img] All pages were tested on all current mobile browsers (Native browser,
-      Chrome, Safari...).
-- [ ] **OS:** ![High][high_img] All pages were tested on all current OS (Windows, Android, iOS, Mac...).
+- [ ] **Desktop Browsers （桌上瀏覽器）** ![High][high_img] 所有頁面都經過所有桌上瀏覽器的測試（Safari, Firefox, Chrome, Internet Explorer, EDGE...）。
+- [ ] **Mobile Browsers （手機瀏覽器）** ![High][high_img] 所有頁面都經過所有手機瀏覽器的測試（Native browser, Chrome, Safari...）。
+- [ ] **OS （作業系統）** ![High][high_img] 所有頁面都經過所有作業系統的測試（Windows, Android, iOS, Mac...）。
 
-- [ ] **Design fidelity:** ![Low][low_img] Depending on the project and the quality of the creatives, you may be asked
-      to be close to the design. You can use some tools to compare creatives with your code implementation and ensure
-      consistency.
+- [ ] **Design fidelity （設計忠實度）** ![Low][low_img] 根據專案需求與設計的品質，可能需要盡量貼近設計稿。你可以使用工具來比較設計稿與程式碼實作，盡量確保視覺的一致性。
 
 > [Pixel Perfect - Chrome Extension](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 
-- [ ] **Reading direction:** ![High][high_img] All pages need to be tested for LTR and RTL languages if they need to be
-      supported.
+- [ ] **Reading direction （閱讀方向）** ![High][high_img] 如果有其他語系會被使用到的話，針對所有頁面都使用 LTR 跟 RTL 閱讀方向測試過。
 
 - 📖
   [Building RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
