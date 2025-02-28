@@ -192,17 +192,15 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 - 📖
   [5 common mistakes with rel=canonical - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
 
-### HTML tags
+### HTML 標籤
 
-- [ ] **Language attribute:** ![High][high_img] The `lang` attribute of your website is specified and related to the
-      language of the current page.
+- [ ] **Language attribute:** ![High][high_img] 語言屬性 `lang` 在網頁中被指定且與當前頁面的語言是相關的。
 
 ```html
 <html lang="en"></html>
 ```
 
-- [ ] **Direction attribute:** ![Medium][medium_img] The direction of lecture is specified on the html tag (It can be
-      used on another HTML tag).
+- [ ] **Direction attribute:** ![Medium][medium_img] 文字閱讀方向有被設定在 body 標籤內（也可以用在其他 HTML 標籤裡）。
 
 ```html
 <html dir="rtl">
@@ -212,8 +210,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
 
-- [ ] **Alternate language:** ![Low][low_img] The language tag of your website is specified and related to the language
-      of the current page.
+- [ ] **Alternate language:** ![Low][low_img] 語言標籤在網頁中被指定且與當前頁面的語言是相關的。
 
 <!-- prettier-ignore-start -->
 ```html
@@ -221,7 +218,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 ```
 <!-- prettier-ignore-end -->
 
-- [ ] **x-default:** ![Low][low_img] The language tag of your website for international landing pages.
+- [ ] **x-default:** ![Low][low_img] 你的網站用於國際著陸頁（Landing Pages）的語言標籤。
 
 ```html
 <link rel="alternate" href="https://example.com/" hreflang="x-default" />
@@ -229,35 +226,30 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 📖 [x-default - Google](https://webmasters.googleblog.com/2013/04/x-default-hreflang-for-international-pages.html)
 
-- [ ] **Conditional comments:** ![Low][low_img] Conditional comments are present for IE if needed.
+- [ ] **Conditional comments:** ![Low][low_img] 如果有需要，已經為 IE 設定 Conditional comments。
 
 - 📖
   [About conditional comments (Internet Explorer) - MSDN - Microsoft](<https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx>)
 
-- [ ] **RSS feed:** ![Low][low_img] If your project is a blog or has articles, an RSS link was provided.
+- [ ] **RSS feed:** ![Low][low_img] 如果網站是部落格或者會分享文章，設置 RSS 連結。
 
-- [ ] **CSS Critical:** ![Medium][medium_img] The CSS critical (or "above the fold") collects all the CSS used to render
-      the visible portion of the page. It is embedded before your principal CSS call and between `<style></style>` in a
-      single line (minified).
+- [ ] **CSS Critical:** ![Medium][medium_img] CSS critical 將使用在頁面顯示部分的核心 CSS 收集起來，在主要的CSS被呼叫之前就先渲染。它以放置於<style></style>間的形式嵌在檔案中(單行形式、最小化)。
 
-- 🛠 [Critical by Addy Osmani on GitHub](https://github.com/addyosmani/critical) automates this.
+- 🛠 [Critical by Addy Osmani on GitHub](https://github.com/addyosmani/critical) 使這一過程自動化。
 
-- [ ] **CSS order:** ![High][high_img] All CSS files are loaded before any JavaScript files in the `<head>`. (Except the
-      case where sometimes JS files are loaded asynchronously on top of your page).
+- [ ] **CSS order:** ![High][high_img] 在 `<head>` 哩，所有 CSS 檔案都要在 JS 檔案前被載入。（例外狀況: 當 JS 檔案以非同步方式在頁面上方被載入）
 
-### Social meta
+### 社交媒體的 meta 標籤
 
-Visualize and generate automatically our social meta tags with [Meta Tags](https://metatags.io/)
+使用以下方式視覺化並自動產生我們的社交標籤 [Meta Tags](https://metatags.io/)
 
-**_Facebook OG_** and **_Twitter Cards_** are, for any website, highly recommended. The other social media tags can be
-considered if you target a particular presence on those and want to ensure the display.
+針對所有網頁都高度推薦 **_Facebook OG_** 與 **_Twitter Cards_**。關於其他社交媒體的標籤，當你有特別想要確保的社交媒體的顯示功能再考慮。
 
-- [ ] **Facebook Open Graph:** ![Low][low_img] All Facebook Open Graph (OG) are tested and no one is missing or with
-      false information. Images need to be at least 600 x 315 pixels, although 1200 x 630 pixels is recommended.
+- [ ] **Facebook Open Graph:** ![Low][low_img] 所有 Facebook Open Graph (OG) 都有測試過且沒有遺漏掉或出現失敗的訊息。圖檔最小需要 600x315px，推薦大小 1200x630px。
 
 <!-- prettier-ignore-start -->
 > [!NOTE]
-> Using `og:image:width` and `og:image:height` will specify the image dimensions to the crawler so that it can render the image immediately without having to asynchronously download and process it.
+> 利用 `og:image:width` 與 `og:image:height` ，其會向社交網站的爬蟲指定圖片尺寸，以便它可以立即呈現圖片，不需要再非同步載入並處理它。
 <!-- prettier-ignore-end -->
 
 <!-- prettier-ignore-start -->
@@ -277,7 +269,7 @@ considered if you target a particular presence on those and want to ensure the d
 
 - 📖 [A Guide to Sharing for Webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
 - 📖 [Best practices - Sharing](https://developers.facebook.com/docs/sharing/best-practices/)
-- 🛠 Test your page with the [Facebook OG testing](https://developers.facebook.com/tools/debug/)
+- 🛠 利用 [Facebook OG testing](https://developers.facebook.com/tools/debug/) 測試你的網頁
 
 - [ ] **Twitter Card:** ![Low][low_img]
 
@@ -295,7 +287,7 @@ considered if you target a particular presence on those and want to ensure the d
 
 - 📖
   [Getting started with cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
-- 🛠 Test your page with the [Twitter card validator](https://cards-dev.twitter.com/validator)
+- 🛠 利用 [Twitter card validator](https://cards-dev.twitter.com/validator) 測試你的網頁
 
 **[⬆ back to top](#-table-of-contents)**
 
@@ -303,42 +295,34 @@ considered if you target a particular presence on those and want to ensure the d
 
 ### 最佳實踐
 
-- [ ] **HTML5 Semantic Elements:** ![High][high_img] HTML5 Semantic Elements are used appropriately (header, section,
-      footer, main...).
+- [ ] **HTML5 Semantic Elements（HTML5 語意元素）** ![High][high_img] HTML5 Semantic Elements 語意元素被適當使用(header, section, footer, main...)。
 
 - 📖 [HTML Reference](http://htmlreference.io/)
 
-- [ ] **Error pages:** ![High][high_img] Error 404 page and 5xx exist. Remember that the 5xx error pages need to have
-      their CSS integrated (no external call on the current server).
+- [ ] **Error pages（錯誤頁面）** ![High][high_img] 404 錯誤頁面跟存在 5xx 錯誤的情況需要它自己的 CSS 程式碼(不要從當前的服務向外呼叫)。
 
-- [ ] **Noopener:** ![Medium][medium_img] In case you are using external links with `target="_blank"`, your link should
-      have a `rel="noopener"` attribute to prevent tab nabbing. If you need to support older versions of Firefox, use
-      `rel="noopener noreferrer"`.
-
+- [ ] **Noopener:** ![Medium][medium_img] 注意當你有外部連結且使用 `target="_blank"` 時，在連結加上 `rel="noopener"`，可以避免 tab nabbing (開啟新 tab 時造成原頁面效能低落)。若你要支援舊版 Firefox，使用 `rel="noopener noreferrer"`。
 - 📖 [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
 
-- [ ] **Clean up comments:** ![Low][low_img] Unnecessary code needs to be removed before sending the page to production.
+- [ ] **Clean up comments（清除註解）** ![Low][low_img] 頁面發表前將沒有效果的程式碼清除。
 
-### HTML testing
+### HTML 測試
 
-- [ ] **W3C compliant:** ![High][high_img] All pages need to be tested with the W3C validator to identify possible
-      issues in the HTML code.
+- [ ] **W3C compliant(W3C 兼容)** ![High][high_img] 所有頁面都要經過 W3C 檢測器的測試，確保沒有 HTML 程式碼的問題。
 
 - 🛠 [W3C validator](https://validator.w3.org/)
 
-- [ ] **HTML Lint:** ![High][high_img] I use tools to help me analyze any issues I could have on my HTML code.
+- [ ] **HTML Lint:** ![High][high_img] 我使用工具分析自己的 HTML 程式碼，幫助我發現任何可能的問題。
 
 - 🛠 [Dirty markup](https://www.10bestdesign.com/dirtymarkup/)
 
 - 🛠 [webhint](https://webhint.io/)
 
-- [ ] **Link checker:** ![High][high_img] There are no broken links in my page, verify that you don't have any 404
-      error.
+- [ ] **Link checker:** ![High][high_img] 使用 Link checker 確保沒有任何無效連結，避免出現任何 404 error。
 
 - 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
 
-- [ ] **Adblockers test:** ![Medium][medium_img] Your website shows your content correctly with adblockers enabled (You
-      can provide a message encouraging people to disable their adblocker).
+- [ ] **Adblockers test:** ![Medium][medium_img] 測試你的頁面在廣告阻斷程式運作的情況下能正確顯示（你可以顯示訊息慫恿使用者關閉廣告阻斷程式）。
 
 - 📖
   [Use AdBlocking in your Dev Environment](https://andreicioara.com/use-adblocking-in-your-dev-environment-48db500d9b86)
