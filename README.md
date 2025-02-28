@@ -592,17 +592,17 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 - 🛠 [WebPageTest](https://www.webpagetest.org/)
 - 📖 [Size Limit: Make the Web lighter](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
-- [ ] **Minified HTML:** ![Medium][medium_img] 你的 HTML 有進行壓縮。
+- [ ] **Minified HTML（最小化 HTML）:** ![Medium][medium_img] 你的 HTML 有進行壓縮。
 
-- [ ] **Lazy loading:** ![Medium][medium_img] 讓圖片、程式腳本跟 CSS 都進行 lazy load 延遲載入，以提升當前瀏覽的網頁的反應速度（細節在它們個別的章節中）。
+- [ ] **Lazy loading（延遲仔入）:** ![Medium][medium_img] 讓圖片、程式腳本跟 CSS 都進行 lazy load 延遲載入，以提升當前瀏覽的網頁的反應速度（細節在它們個別的章節中）。
 
-- [ ] **Cookie size:** ![Medium][medium_img] 如果你有使用 cookie，確保 cookie 大小不要超過 4096 bytes，且在你的網域內別超過 20 個 cookie。
+- [ ] **Cookie size（限制 cookie 的大小與數量）:** ![Medium][medium_img] 如果你有使用 cookie，確保 cookie 大小不要超過 4096 bytes，且在你的網域內別超過 20 個 cookie。
 
 - 📖 [Cookie specification: RFC 6265](https://tools.ietf.org/html/rfc6265)
 - 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 - 🛠 [Browser Cookie Limits](http://browsercookielimits.squawky.net/)
 
-- [ ] **Third party components:** ![Medium][medium_img] 盡可能以靜態元件取代第三方 iframe 或依賴外部 JS 的元件（如分享按鈕），進而限制呼叫外部 APIs 的次數並保護使用者的行動隱私。
+- [ ] **Third party components（第三方元件）:** ![Medium][medium_img] 盡可能以靜態元件取代第三方 iframe 或依賴外部 JS 的元件（如分享按鈕），進而限制呼叫外部 APIs 的次數並保護使用者的行動隱私。
 
 - 🛠 [Simple sharing buttons generator](https://simplesharingbuttons.com/)
 
@@ -610,25 +610,25 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 - 📖 [Explanation of the following techniques](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
-- [ ] **DNS resolution:** ![Low][low_img] 使用 `dns-prefetch` 在閒置時間預先解析可能需要的第三方服務 DNS 服務。
+- [ ] **DNS resolution（DNS 解析）:** ![Low][low_img] 使用 `dns-prefetch` 在閒置時間預先解析可能需要的第三方服務 DNS 服務。
 
 ```html
 <link rel="dns-prefetch" href="https://example.com" />
 ```
 
-- [ ] **Preconnection:** ![Low][low_img] 使用 `preconnect` 在閒置時間提前完成 DNS 查詢、TCP 交握以及 TLS 協定即將要使用到的服務。
+- [ ] **Preconnection（預連接）:** ![Low][low_img] 使用 `preconnect` 在閒置時間提前完成 DNS 查詢、TCP 交握以及 TLS 協定即將要使用到的服務。
 
 ```html
 <link rel="preconnect" href="https://example.com" />
 ```
 
-- [ ] **Prefetching:** ![Low][low_img] 使用 `prefetch` 在閒置時間提前請求即將使用到的資源（例如 lazy loaded images）。
+- [ ] **Prefetching（預擷取）:** ![Low][low_img] 使用 `prefetch` 在閒置時間提前請求即將使用到的資源（例如 lazy loaded images）。
 
 ```html
 <link rel="prefetch" href="image.png" />
 ```
 
-- [ ] **Preloading:** ![Low][low_img] 使用 `preload` 提前載入當前頁面需要的資源（例如放在 `<body>` 末尾的 `script` 腳本）。
+- [ ] **Preloading（預載入）:** ![Low][low_img] 使用 `preload` 提前載入當前頁面需要的資源（例如放在 `<body>` 末尾的 `script` 腳本）。
 
 ```html
 <link rel="preload" href="app.js" />
@@ -674,7 +674,7 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 ### Semantics 語意化
 
-- [ ] **Specific HTML5 input types are used （有指定 HTML5 輸入標籤的類型）** ![Medium][medium_img]  這對在手機上顯示不同類型的客製化鍵盤或配件特別重要。
+- [ ] **Specific HTML5 input types are used （有指定 HTML5 輸入標籤的類型）:** ![Medium][medium_img]  這對在手機上顯示不同類型的客製化鍵盤或配件特別重要。
 
 - 📖 [Mobile Input Types](http://mobileinputtypes.com/)
 
@@ -687,13 +687,13 @@ _而接下來 Charset 和 Viewport 這兩個 `<meta>` 標籤一定要放在 `<he
 
 ### Accessibility testing 無障礙測試
 
-- [ ] **Accessibility standards testing:** ![High][high_img] 利用 Wave 測試你的頁面是否符合無障礙標準。
+- [ ] **Accessibility standards testing（無障礙標準測試）:** ![High][high_img] 利用 Wave 測試你的頁面是否符合無障礙標準。
 
 - 🛠 [Wave testing](http://wave.webaim.org/)
 
-- [ ] **Keyboard navigation （鍵盤導覽）** ![High][high_img] 測試看看你的網站只使用鍵盤按照順序瀏覽，確保所有互動元素都可以點選使用。
-- [ ] **Screen-reader （螢幕閱讀器）** ![Medium][medium_img] 所有頁面都使用螢幕閱讀器測試過 (VoiceOver、ChromeVox、NVDA 或 Lynx)。
-- [ ] **Focus style:** ![High][high_img] 如果 focus 焦點被停用，它將被 CSS 中的 `visible` 可見狀態取代。
+- [ ] **Keyboard navigation （鍵盤導覽）:** ![High][high_img] 測試看看你的網站只使用鍵盤按照順序瀏覽，確保所有互動元素都可以點選使用。
+- [ ] **Screen-reader （螢幕閱讀器）:** ![Medium][medium_img] 所有頁面都使用螢幕閱讀器測試過 (VoiceOver、ChromeVox、NVDA 或 Lynx)。
+- [ ] **Focus style（焦點樣式）:** ![High][high_img] 如果 focus 焦點被停用，它將被 CSS 中的 `visible` 可見狀態取代。
 
 - 📹
   [管理 Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
