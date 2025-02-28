@@ -738,21 +738,18 @@ considered if you target a particular presence on those and want to ensure the d
 - 📖
   [Using the aria-label attribute - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
 
-### Accessibility testing
+### Accessibility testing 無障礙測試
 
-- [ ] **Accessibility standards testing:** ![High][high_img] Use the WAVE tool to test if your page respects the
-      accessibility standards.
+- [ ] **Accessibility standards testing:** ![High][high_img] 利用 Wave 測試你的頁面是否符合無障礙標準。
 
 - 🛠 [Wave testing](http://wave.webaim.org/)
 
-- [ ] **Keyboard navigation:** ![High][high_img] Test your website using only your keyboard in a previsible order. All
-      interactive elements are reachable and usable.
-- [ ] **Screen-reader:** ![Medium][medium_img] All pages were tested in a screen-reader (VoiceOver, ChromeVox, NVDA or
-      Lynx).
-- [ ] **Focus style:** ![High][high_img] If the focus is disabled, it is replaced by visible state in CSS.
+- [ ] **Keyboard navigation （鍵盤導覽）** ![High][high_img] 測試看看你的網站只使用鍵盤按照順序瀏覽，確保所有互動元素都可以點選使用。
+- [ ] **Screen-reader （螢幕閱讀器）** ![Medium][medium_img] 所有頁面都使用螢幕閱讀器測試過 (VoiceOver、ChromeVox、NVDA 或 Lynx)。
+- [ ] **Focus style:** ![High][high_img] 如果 focus 焦點被停用，它將被 CSS 中的 `visible` 可見狀態取代。
 
 - 📹
-  [Managing Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
+  [管理 Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
 **[⬆ back to top](#-table-of-contents)**
 
@@ -779,7 +776,7 @@ considered if you target a particular presence on those and want to ensure the d
 
 - 🛠 利用 [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool) 測試你的robots.txt。
 
-- [ ] **Structured Data:** ![High][high_img] 確認所有頁面使用了結構化資料且已經測試過沒有出現錯誤。結構化資料會協助爬蟲理解這個頁面的內容。
+- [ ] **Structured Data（結構化資料）:** ![High][high_img] 確認所有頁面使用了結構化資料且已經測試過沒有出現錯誤。結構化資料會協助爬蟲理解這個頁面的內容。
 
 - 📖 [介紹 Structured Data - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
 - 📖 [JSON-LD](https://json-ld.org/)
