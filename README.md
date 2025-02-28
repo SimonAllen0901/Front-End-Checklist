@@ -276,7 +276,7 @@ considered if you target a particular presence on those and want to ensure the d
 <!-- prettier-ignore-end -->
 
 - 📖 [A Guide to Sharing for Webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
-- 📖 [Best Practices - Sharing](https://developers.facebook.com/docs/sharing/best-practices/)
+- 📖 [Best practices - Sharing](https://developers.facebook.com/docs/sharing/best-practices/)
 - 🛠 Test your page with the [Facebook OG testing](https://developers.facebook.com/tools/debug/)
 
 - [ ] **Twitter Card:** ![Low][low_img]
@@ -301,7 +301,7 @@ considered if you target a particular presence on those and want to ensure the d
 
 ## HTML
 
-### Best practices
+### 最佳實踐
 
 - [ ] **HTML5 Semantic Elements:** ![High][high_img] HTML5 Semantic Elements are used appropriately (header, section,
       footer, main...).
@@ -471,7 +471,7 @@ considered if you target a particular presence on those and want to ensure the d
 > **Notes:** For a complete understanding of image optimization, check the free ebook
 > **[Essential Image Optimization](https://images.guide/)** from Addy Osmani.
 
-### Best practices
+### 最佳實踐
 
 - [ ] **Optimization:** ![High][high_img] All images are optimized to be rendered in the browser. WebP format could be
       used for critical pages (like Homepage).
@@ -508,7 +508,7 @@ considered if you target a particular presence on those and want to ensure the d
 
 ## JavaScript
 
-### Best practices
+### 最佳實踐
 
 - [ ] **JavaScript Inline:** ![High][high_img] You don't have any JavaScript code inline (mixed with your HTML code).
 - [ ] **Concatenation:** ![High][high_img] JavaScript files are concatenated.
@@ -557,23 +557,22 @@ considered if you target a particular presence on those and want to ensure the d
 
 ---
 
-## Security
+## Security 安全性
 
-### Scan and check your web site
+### 掃瞄並檢視你的網站
 
 - [securityheaders.io](https://securityheaders.io/)
 - [Observatory by Mozilla](https://observatory.mozilla.org/)
 
-### Best practices
+### 最佳實踐
 
-- [ ] **HTTPS:** ![High][high_img] HTTPS is used on every page and for all external content (plugins, images...).
+- [ ] **HTTPS:** ![High][high_img] 所有頁面跟所有外部的內容（外掛、圖片...等）都使用 HTTPS
 
 - 🛠 [Let's Encrypt - Free SSL/TLS Certificates](https://letsencrypt.org/)
 - 🛠 [Free SSL Server Test](https://www.ssllabs.com/ssltest/index.html)
 - 📖 [Strict Transport Security](http://caniuse.com/#feat=stricttransportsecurity)
 
-- [ ] **HTTP Strict Transport Security (HSTS):** ![Medium][medium_img] The HTTP header is set to
-      'Strict-Transport-Security'.
+- [ ] **HTTP Strict Transport Security (HSTS):** ![Medium][medium_img] 在 HTTP header 設置 `Strict-Transport-Security`。
 
 - 🛠 [Check HSTS preload status and eligibility](https://hstspreload.org/)
 - 📖
@@ -581,32 +580,29 @@ considered if you target a particular presence on those and want to ensure the d
 - 📖
   [Transport Layer Protection Cheat Sheet - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html)
 
-- [ ] **Cross Site Request Forgery (CSRF):** ![High][high_img] You ensure that requests made to your server-side are
-      legitimate and originate from your website / app to prevent CSRF attacks.
+- [ ] **Cross Site Request Forgery (CSRF):** ![High][high_img] 確認發送到 Server Side 服務端的請求合法，且確實來自你的網站或 APP，避免 CSRF 攻擊。
 
 - 📖
   [Cross-Site Request Forgery (CSRF) Prevention Cheat Sheet - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
 
-- [ ] **Cross Site Scripting (XSS):** ![High][high_img] Your page or website is free from XSS possible issues.
+- [ ] **Cross Site Scripting (XSS):** ![High][high_img] 確認網站或頁面不會發生 XSS 的情況。
 
 - 📖
   [XSS (Cross Site Scripting) Prevention Cheat Sheet - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - 📖
   [DOM based XSS Prevention Cheat Sheet - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
 
-- [ ] **Content Type Options:** ![Medium][medium_img] Prevents Google Chrome and Internet Explorer from trying to
-      mime-sniff the content-type of a response away from the one being declared by the server.
+- [ ] **Content Type Options:** ![Medium][medium_img] 防止 Google Chrome 和 Internet Explorer 嘗試進行 MIME 嗅探，將伺服器聲明的 Content-Type 更改為其他類型。
 
 - 📖
   [X-Content-Type-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-content-type-options)
 
-- [ ] **X-Frame-Options (XFO):** ![Medium][medium_img] Protects your visitors against clickjacking attacks.
+- [ ] **X-Frame-Options (XFO):** ![Medium][medium_img] 保護你的使用者免於點擊劫持（Clickjacking）攻擊。
 
 - 📖 [X-Frame-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-frame-options)
 - 📖 [RFC7034 - HTTP Header Field X-Frame-Options](https://tools.ietf.org/html/rfc7034)
 
-- [ ] **Content Security Policy:** ![Medium][medium_img] Defines how content is loaded on your site and from where it is
-      permitted to be loaded. Can also be used to protect against clickjacking attacks.
+- [ ] **Content Security Policy:** ![Medium][medium_img] 定義網站內容的加載方式及允許的來源，並可用於防範點擊劫持（Clickjacking）攻擊。
 
 - 📖
   [Content Security Policy - An Introduction - Scott Helme](https://scotthelme.co.uk/content-security-policy-an-introduction/)
@@ -618,66 +614,59 @@ considered if you target a particular presence on those and want to ensure the d
 
 ---
 
-## Performance
+## Performance 效能
 
-### Best practices
+### 最佳實踐
 
-- [ ] **Goals to achieve:** ![Medium][medium_img] Your pages should reach these goals:
+- [ ] **Goals to achieve（需要達成的目標）:** ![Medium][medium_img] 你的頁面應完成以下目標：
 
-  - First Meaningful Paint under 1 second
-  - Time To Interactive under 5 seconds for the "average" configuration (a $200 Android on a slow 3G network with 400ms
-    RTT and 400kbps transfer speed) and under 2 seconds for repeat visits
-  - Critical file size under 170Kb gzipped
+  - 首次有意義繪製（First Meaningful Paint） 在 1 秒內完成
+  - 可互動時間（Time To Interactive, TTI）
+    - 首次載入：在「一般」設備配置下 5 秒內完成（測試條件：$200 美元 Android 手機、慢速 3G 網路、400ms RTT、400kbps 傳輸速度）
+    - 重複訪問：應在 2 秒內完成
+  - 關鍵資源大小在 170KB（Gzip 壓縮後）以內
 
 - 🛠 [Website Page Analysis](https://tools.pingdom.com)
 - 🛠 [WebPageTest](https://www.webpagetest.org/)
 - 📖 [Size Limit: Make the Web lighter](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
-- [ ] **Minified HTML:** ![Medium][medium_img] Your HTML is minified.
+- [ ] **Minified HTML:** ![Medium][medium_img] 你的 HTML 有進行壓縮。
 
-- [ ] **Lazy loading:** ![Medium][medium_img] Images, scripts and CSS need to be lazy loaded to improve the response
-      time of the current page (See details in their respective sections).
+- [ ] **Lazy loading:** ![Medium][medium_img] 讓圖片、程式腳本跟 CSS 都進行 lazy load 延遲載入，以提升當前瀏覽的網頁的反應速度（細節在它們個別的章節中）。
 
-- [ ] **Cookie size:** ![Medium][medium_img] If you are using cookies be sure each cookie doesn't exceed 4096 bytes and
-      your domain name doesn't have more than 20 cookies.
+- [ ] **Cookie size:** ![Medium][medium_img] 如果你有使用 cookie，確保 cookie 大小不要超過 4096 bytes，且在你的網域內別超過 20 個 cookie。
 
 - 📖 [Cookie specification: RFC 6265](https://tools.ietf.org/html/rfc6265)
 - 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 - 🛠 [Browser Cookie Limits](http://browsercookielimits.squawky.net/)
 
-- [ ] **Third party components:** ![Medium][medium_img] Third party iframes or components relying on external JS (like
-      sharing buttons) are replaced by static components when possible, thus limiting calls to external APIs and keeping
-      your user's activity private.
+- [ ] **Third party components:** ![Medium][medium_img] 盡可能以靜態元件取代第三方 iframe 或依賴外部 JS 的元件（如分享按鈕），進而限制呼叫外部 APIs 的次數並保護使用者的行動隱私。
 
 - 🛠 [Simple sharing buttons generator](https://simplesharingbuttons.com/)
 
-### Preparing upcoming requests
+### Preparing upcoming requests 預先準備接下來的請求
 
 - 📖 [Explanation of the following techniques](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
-- [ ] **DNS resolution:** ![Low][low_img] DNS of third-party services that may be needed are resolved in advance during
-      idle time using `dns-prefetch`.
+- [ ] **DNS resolution:** ![Low][low_img] 使用 `dns-prefetch` 在閒置時間預先解析可能需要的第三方服務 DNS 服務。
 
 ```html
 <link rel="dns-prefetch" href="https://example.com" />
 ```
 
-- [ ] **Preconnection:** ![Low][low_img] DNS lookup, TCP handshake and TLS negotiation with services that will be needed
-      soon is done in advance during idle time using `preconnect`.
+- [ ] **Preconnection:** ![Low][low_img] 使用 `preconnect` 在閒置時間提前完成 DNS 查詢、TCP 交握以及 TLS 協定即將要使用到的服務。
 
 ```html
 <link rel="preconnect" href="https://example.com" />
 ```
 
-- [ ] **Prefetching:** ![Low][low_img] Resources that will be needed soon (e.g. lazy loaded images) are requested in
-      advance during idle time using `prefetch`.
+- [ ] **Prefetching:** ![Low][low_img] 使用 `prefetch` 在閒置時間提前請求即將使用到的資源（例如 lazy loaded images）。.
 
 ```html
 <link rel="prefetch" href="image.png" />
 ```
 
-- [ ] **Preloading:** ![Low][low_img] Resources needed in the current page (e.g. scripts placed at the end of `<body>`)
-      in advance using `preload`.
+- [ ] **Preloading:** ![Low][low_img] 使用 `preload` 提前載入當前頁面需要的資源（例如放在 `<body>` 末尾的 `script` 腳本）。
 
 ```html
 <link rel="preload" href="app.js" />
@@ -686,10 +675,9 @@ considered if you target a particular presence on those and want to ensure the d
 - 📖
   [Difference between prefetch and preload](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
 
-### Performance testing
+### Performance testing 效能測試
 
-- [ ] **Google PageSpeed:** ![High][high_img] All your pages were tested (not only the homepage) and have a score of at
-      least 90/100.
+- [ ] **Google PageSpeed:** ![High][high_img] 測試過所有的網頁（不只首頁）且分數都至少90分（滿分100）。
 
 - 🛠 [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 - 🛠 [Test your mobile speed with Google](https://testmysite.withgoogle.com)
@@ -699,44 +687,41 @@ considered if you target a particular presence on those and want to ensure the d
 
 **[⬆ back to top](#-table-of-contents)**
 
-## Accessibility
+## Accessibility 無障礙
 
-> **Notes:** You can watch the playlist
+> **補充：** 你也可以參考這份清單
 > [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g) 📹
 
-### Best practices
+### 最佳實踐
 
-- [ ] **Progressive enhancement:** ![Medium][medium_img] Major functionality like main navigation and search should work
-      without JavaScript enabled.
+- [ ] **Progressive enhancement:** ![Medium][medium_img] 網站的重要功能，像是主要的導覽指引或搜尋區塊，需要在沒有 JavaScript 的情況下也能運作。
 
-- 📖 [Enable / Disable JavaScript in Chrome Developer Tools](https://www.youtube.com/watch?v=kBmvq2cE0D8)
+- 📖 [在 Chrome 開發者工具啟用/停用 JavaScript](https://www.youtube.com/watch?v=kBmvq2cE0D8)
 
-- [ ] **Color contrast:** ![Medium][medium_img] Color contrast should at least pass WCAG AA (AAA for mobile).
+- [ ] **Color contrast:** ![Medium][medium_img] 色彩對比應至少符合 WCAG AA 標準（行動裝置建議達到 AAA 標準）。
 
 - 🛠 [Contrast ratio](https://www.siegemedia.com/contrast-ratio)
 
-#### Headings
+#### Headings 標題
 
-- [ ] **H1:** ![High][high_img] All pages have an H1 which is not the title of the website.
-- [ ] **Headings:** ![High][high_img] Headings should be used properly and in the right order (H1 to H6).
+- [ ] **H1:** ![High][high_img] 所有頁面都要有一個不是網頁標題名稱的 H1 標籤（代表頁面的主要功能）。
+- [ ] **Headings:** ![High][high_img] 標題標籤要按照合理的等級順序妥善使用（H1 to H6）。
 
 - 📹
   [Why headings and landmarks are so important -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
-### Semantics
+### Semantics 語意化
 
-- [ ] **Specific HTML5 input types are used:** ![Medium][medium_img] This is especially important for mobile devices
-      that show customized keypads and widgets for different types.
+- [ ] **Specific HTML5 input types are used （有指定 HTML5 輸入標籤的類型）** ![Medium][medium_img]  這對在手機上顯示不同類型的客製化鍵盤或配件特別重要。
 
 - 📖 [Mobile Input Types](http://mobileinputtypes.com/)
 
-### Form
+### Form 表單
 
-- [ ] **Label:** ![High][high_img] A label is associated with each input form element. In case a label can't be
-      displayed, use `aria-label` instead.
+- [ ] **Label:** ![High][high_img] Lable 各自會與相對的表單元素產生關聯。如果希望 label 不顯示，請使用 `aria-label` 來代替。
 
 - 📖
-  [Using the aria-label attribute - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
+  [使用 aria-label 屬性 - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
 
 ### Accessibility testing 無障礙測試
 
